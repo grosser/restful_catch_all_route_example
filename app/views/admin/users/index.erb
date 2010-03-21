@@ -1,0 +1,9 @@
+Admin index is here!!!
+
+We got some models TOOO
+<br />
+<% User.all.each do |user| %>
+  <%= link_to user.name, [:admin, user] %>
+  <%= link_to 'edit', polymorphic_url([:admin, user], :action => :edit) %>
+  <br />
+<% end %>
