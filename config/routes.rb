@@ -1,0 +1,2 @@
+RestfulCatchAllRouteExample::Application.routes.draw do
+end
