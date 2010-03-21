@@ -1,0 +1,3 @@
+I am <%=@user.name%>
+<%= link_to @user.name+' but i can be small', polymorphic_url(@user, :action => :small) %>
+<%= link_to 'edit', polymorphic_url(@user, :action => :edit) %>

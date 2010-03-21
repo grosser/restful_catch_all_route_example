@@ -1,0 +1,13 @@
+This is <%= link_to 'index', User %>
+<br />
+
+<table>
+  <% User.all.each do |user| %>
+    <tr><td><%= link_to user.name, user %></td></tr>
+  <% end %>
+</table>
+
+<br />
+If you like it you may also like:<br />
+<%= link_to 'new', :controller => :users, :action => :new %> or
+<%= link_to 'search', :action => :search %>
